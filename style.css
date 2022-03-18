@@ -7,18 +7,22 @@
 
 header {
     background: #bbc5ce;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(185, 129, 8);
+    position: fixed;
+    width: 100%;
 }
 
 header img {
-    float: right;
-    /* height: 30px; */
+    /*float: right;*/
+    position: absolute;
+    height: 150px;
     padding: 10px 60px;
+    left: 85%;
 } 
 
 header p {
     /* display: inline-block; */
-    color:#152733;
+    color:#2b3033;
     padding: 10px 80px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -26,25 +30,40 @@ header p {
     letter-spacing: 10px;
 }
 
-.clearxfix:after {
+/*.clearxfix:after {
     content: "";
     display: table;
     clear: both;
-}
+}*/
 
 .container1 {
     background: url(Images/background1.jpeg);
     /*width: 100%;*/
     /*background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");*/
     background-size: cover;
+    background-position: 50% 20%;
     height: 100vh;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
-ˇ
-h1 {
-    color: red;
-    padding: 10px 60px;
 
+.container1 h1 {
+    color: #4e4e4e;
+    font-size: clamp(20px, 8vw, 90px);
+    padding: 90px 100px 10px 100px;
+    letter-spacing: 5px;
+}
+
+.container1 h1 span {
+    color: rgb(173, 135, 52);
+    font-size: clamp(20px, 8vw, 90px);
+}
+
+.container1 p {
+    color: rgb(185, 129, 8);
+    font-size: clamp(10px, 2vw, 20px);
+    padding: 5px 100px;
+    letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 /* #logo {
