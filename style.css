@@ -1,26 +1,44 @@
-html, body {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-#container {
-    width: 1200px;
-    margin: 0px auto;
-}
-
 header {
     background: #bbc5ce;
+    border-bottom: 2px solid #fff;
 }
 
+header img {
+    float: right;
+    /* height: 30px; */
+    padding: 10px 60px;
+} 
+
 header h1 {
+    /* display: inline-block; */
     color:#152733;
-    text-align: center;
-    margin-top: 0;
+    padding: 10px 80px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: 20px;
+    text-transform: uppercase; 
     letter-spacing: 10px;
 }
+
+.clearxfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container1 {
+    background: url(Images/background1.jpeg);
+    width: 100%;
+    /*background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");*/
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
 #logo {
     float: left;
     width: 400px;
@@ -41,27 +59,23 @@ header h1 {
     width: 700px;
 }
 
-.clearxfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 main h2 {
     text-align: center;
     color: #152733;
     font-size: 40px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
 main p {
     background: #bbc5ce;
+    display: block;
     color: 152733;
     font-size: 20px;
-    padding: 10px 15px;
-    margin-top: 15px;
+    padding: 10px 40px;
+    margin: 15px 0;
     font-family: 'Montserrat', sans-serif;
 }
 
