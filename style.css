@@ -13,7 +13,6 @@ header {
 }
 
 header img {
-    /*float: right;*/
     position: absolute;
     height: 150px;
     padding: 10px 60px;
@@ -21,7 +20,6 @@ header img {
 } 
 
 header p {
-    /* display: inline-block; */
     color:#2b3033;
     padding: 10px 80px;
     font-family: 'Montserrat', sans-serif;
@@ -30,13 +28,7 @@ header p {
     letter-spacing: 10px;
 }
 
-/*.clearxfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
-.container1 {
+.section1 {
     background: url(Images/background1.jpeg);
     /*width: 100%;*/
     /*background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");*/
@@ -46,65 +38,96 @@ header p {
     /*background-attachment: fixed;*/
 }
 
-.container1 h1 {
+
+/************ First section ******************/
+.section1 h1 {
     color: #4e4e4e;
     font-size: clamp(20px, 8vw, 90px);
     padding: 90px 100px 10px 100px;
     letter-spacing: 5px;
 }
 
-.container1 h1 span {
+.section1 h1 span {
     color: rgb(173, 135, 52);
     font-size: clamp(20px, 8vw, 90px);
 }
 
-.container1 p {
+.section1 p {
     color: rgb(185, 129, 8);
     font-size: clamp(10px, 2vw, 20px);
     padding: 5px 100px;
-    letter-spacing: 2px;
-    line-height: 1.5;
+    letter-spacing: 4px;
+    line-height: 2;
 }
 
-/* #logo {
-    float: left;
-    width: 400px;
-    height: 360px;
-}      
+/************ Second section ******************/
+.section2 {
+    background: #dce5ec;
+}   
 
-#logo img {
-    width: 700px;
-    height: 360px;
-    }
-
-#auto {
-    float: right;
-    width: 700px;
-}
-
-#auto img {
-    width: 700px;
-} */
-
-
-
-.container2 h2 {
+h2 {
     text-align: center;
-    color: #152733;
-    font-size: 40px;
-    margin: 0 30px;
+    color: #4e4e4e;
+    font-size: 50px;
+    padding: 60px 30px 40px 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.container2 p {
-    background: #bbc5ce;
-    display: block;
-    color: 152733;
-    font-size: 20px;
-    padding: 10px 40px;
+.section2 .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 40px;
+}
+
+.icon-paragraph {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 30px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    flex-basis: 30%;
+    box-shadow:0px 0px 15px 5px rgb(168, 161, 144) ;
+    /*background: rgba(202, 157, 99, 0.774);*/
+    /*background: #eff7ff;*/
+    background: linear-gradient(45deg, #aaaaa9, #e2bd6d);
+    border-radius: 5px;
+}
+
+.icon-border { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 3px solid rgb(185, 129, 8);
+    background: #fff;
+}
+
+.material-icons-outlined {
+    font-size: 30px;
+    color: rgb(185, 129, 8);
+}
+.section2 .container .icon-paragraph p {
+    text-align: center;
+    color: #152733;
+    font-size: 18px;
+    padding: 20px;
     margin: 15px 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+/************ Third section ******************/
+.section3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(0, 0, 0, 0.2)), url(Images/background2.jpg); 
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 100vh;  
+}
+
 
 form {
     text-align: center;
