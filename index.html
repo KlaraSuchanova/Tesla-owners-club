@@ -52,14 +52,34 @@
         </div>
 
         <div class="section3">
-        <h2>Register</h2>
-        <form> 
-            <input type="text" placeholder="Name"> <br>
-            <input type="text" placeholder="Surname"> <br>
-            <input type="email" placeholder="Email"> <br>
-            <input type="password" placeholder="Password"> <br>
-            <button class="button" type="submit">Submit</button>
-        </div>   
+            <div class="form-container">
+                <h2>Login</h2>
+                <form> 
+
+                    <div class="form-item">
+                        <span class="material-icons-outlined">account_circle
+                        </span>
+                         <input type="text" id="user" placeholder="Email or Username"> 
+                    </div>
+
+                    <div class="form-item">
+                        <span class="material-icons-outlined">lock
+                        </span>
+                        <input type="password" id="password" placeholder="Password"> 
+                    </div>
+
+                    <button class="button" type="submit">Login</button>
+
+                    <p>Or Login Using</p>
+
+                    <div class="options">
+                        <button class="fb">Facebook</button>
+                        <button class="gl">Google</button>
+                    </div>
+                    <p>New User ? <a href="#">Create an Account</a></p>
+                </form>
+            </div>   
+        
     </main>
     <footer>
         <p>
