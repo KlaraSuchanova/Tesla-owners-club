@@ -27,6 +27,7 @@ header p {
     font-size: 20px;
     text-transform: uppercase; 
     letter-spacing: 10px;
+    font-weight: 500;
 }
 
 
@@ -36,7 +37,9 @@ header p {
     background-size: cover;
     background-position: 50% 20%;
     min-height: 100vh;
-    background-attachment: fixed;
+    max-width: 2560px;
+    /*background-attachment: fixed;*/
+    width: auto;
     overflow: hidden;
 }
 
@@ -61,7 +64,7 @@ header p {
 }
 
 .section1 .button {   
-    margin-top: 40vh;
+    margin-top: 4vh;
     margin-left: 100px;
     border-radius: 5px;
     max-width: fit-content;
@@ -102,7 +105,7 @@ h2 {
     align-items: center;
     min-width: 300px;
     padding: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     flex-direction: column;
     flex-basis: 30%;
     box-shadow:0px 0px 15px 5px rgb(168, 161, 144) ;
@@ -118,7 +121,7 @@ h2 {
     height: 60px;
     border-radius: 100%;
     border: 3px solid rgb(185, 129, 8);
-    background: #fff;
+    background: #d1d2d3;
 }
 
 .material-icons-outlined {
@@ -160,7 +163,7 @@ h2 {
     background: transparent;
     box-shadow:0 0 15px #fff;
     max-width: 500px;
-    margin: 80px auto;
+    margin: 110px auto;
     padding: 30px;
     border-radius: 10px;
     background-blend-mode: darken;
